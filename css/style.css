@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+*{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+}
+.alert{
+    height: 30px !important;
+    padding: 3px 3px;
+    font-size: 15px;
+    color: #FF0000; /* Đổi màu chữ thành đỏ */
+}
+.bg-sign-in{
+    background:linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+    height:100vh;
+}
+.form-sign-in,.sign-up{
+    border-radius: 10px;
+    width: 380px;
+}
+
+.bg-show{
+    display: block !important;
+    z-index: 0;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+.register{
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1000px;
+    transform: translate(-190px,-260px);
+    transition: 1s ease-out;
+}
+.register-active{
+    margin-top:0;
+    transition: 1s ease-out;
+}
+button[type="submit"]{
+    background-color: #00C1FE;
+}
+.E-classe {
+    border-left:solid 6px #00C1FE;
+}
+.bg-sign-in p,.bg-sign-in label{
+    font-size: 14px;
+    line-height:17,07px;
+    font-weight: 400;
+    color:#6C6C6C;
+}
+input[type="email"]::placeholder,input[type="password"]::placeholder{
+    font-size: 12px;
+    line-height: 15px;
+    color: #CDCDCD;
+}
+.sign-in{
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+}
+/* start dashboard */
+/* start sidebar */
+.bg-sidebar{
+    background-color: #FAFFC1;
+    transition: margin 0.6s ease-in-out;
+    z-index: 1;
+}
+.bg-content{
+    background:#F8F8F8;
+}
+.h7{
+    font-size: 14px;
+}
+/* end sidebar */
+/* start cards */
+.admin-color{
+    color: #04b7ee ;
+}
+.cards .card__items{
+    border-radius: 8px;
+    width: 220px;
+    height: 150px;
+}
+.card__items--blue{
+    background-color:#F0F9FF;
+}
+.card__items--blue i{
+    color: #74C1ED;
+}
+.card__items--rose{
+    background-color:#FEF6FB;
+}
+.card__items--rose i{
+    color:#EE95C5;
+}
+.card__items--yellow{
+    background-color:#FEFBEC;
+}
+.card__items--yellow i{
+    color:#00C1FE;
+}
+.card__items--gradient{
+    background: linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
+.card__items--gradient i{
+    color:#FFFFFF;
+}
+.nbr{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+/* end cards */
+/* end dashboard */
+
+
+/* start students list  */
+.student_list{
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+.table th {
+    font-size: 20px; /* Đặt kích thước chữ lớn hơn (ví dụ: 24px) */
+    color: #007bff; /* Đặt màu chữ (ví dụ: màu xanh) */
+    font-family: "Arial", sans-serif; /* Thay đổi kiểu chữ (ví dụ: Arial) */
+    font-weight: bold; /* Tùy chọn: Đặt độ đậm cho tiêu đề */
+    
+}
+
+/* Đặt kiểu chữ cho nội dung bảng */
+.table tbody {
+    font-size: 15px;
+}
+
+/* Đặt màu cho liên kết */
+.table a {
+    color: #00C1FE;
+}
+
+/* Thêm kẻ dọc cho bảng */
+.table {
+    border-collapse: collapse; /* Gộp các đường kẻ để tạo kẻ đứt liền */
+}
+
+/* Đặt kiểu kẻ dọc và màu cho các đường kẻ dọc */
+.table td,
+.table th {
+    border-right: 3px solid #ccc; 
+}
+
+.student-list-header{
+    border-bottom: 2px solid #E5E5E5;
+}
+.student-list-header i{
+    color:#00C1FE;
+}
+
+.btn-primary{
+    background-color: #00C1FE;
+  border-color: #00C1FE;
+}
+.btn-primary:hover {
+    background-color: #04a6d8;
+  border-color: #04a6d8;
+}
+.btn-primary:focus{
+    background-color: none;
+}
+/* end students list */
+.fa-search{
+    left:-30px;
+}
+.bg-sidebar a:hover{
+    background-color: #00C1FE;
+    border-radius: 5px;
+    width: 130px;
+}
+.valid{
+    color: red;
+}
+@media screen and (min-width:720px){
+    .bg-sidebar{
+        position: sticky !important;
+        top: 0;
+        width: 25% !important;
+    }
+    .hidden-sidebar{
+        margin-left: -25%;
+        
+    }
+}
+@media screen and (max-width:720px){
+    .hidden-sidebar-mobile{
+        margin-left: -50%;
+    }
+    
+}
+#img{
+    position: fixed;
+    display: flex;
+    margin-left: 360px;
+    margin-top: 20px;
+    width: 40%;
+   
+}
+.table td, .table th {
+    text-align: center; /* Căn giữa nội dung */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+/* Để căn giữa tiêu đề bảng */
+.table th {
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Để căn giữa nội dung của tất cả các ô trong bảng */
+.table tbody td {
+    text-align: center; /* Căn giữa nội dung */
+}
+.table tbody tr {
+    border-bottom: 2px solid gray; /* Đặt màu kẻ dưới của các dòng trong bảng là màu vàng */
+}
+#img {
+
+    height: auto; /* Đảm bảo tỷ lệ khung hình tự động được bảo toàn */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ khung hình mà không bị căn chỉnh */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px; /* Điều chỉnh chiều cao theo ý muốn */
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+#pass{
+    background-color: yellow;
+}
+/* CSS cho cửa sổ modal */
+/* CSS cho cửa sổ modal */
+.student-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
+    padding: 20px;
+}
+.student-details {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 52px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    background-size: 50%;
+    border: 1px solid red; /* Tạo đường kẻ đỏ */
+    margin: 0 auto;
+    text-align: center;
+    transform: scale(2); /* Tăng kích thước lên 2 lần */
+    margin-top: 140px;
+}
+.student-details img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px; /* Tạo khoảng cách giữa hình ảnh và nội dung */
+}
+/* CSS cho đoạn mã PHP */
+.student-modal p {
+    margin: 0;
+}
+
+.student-modal strong {
+    font-weight: bold;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
