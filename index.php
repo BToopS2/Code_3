@@ -41,7 +41,7 @@
           </div>
           <div class="mb-3 form-check d-flex gap-2">
     <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
-    <label class="form-check-label" for="exampleCheck1">Nhớ tôi</label>
+    <label class="form-check-label" for="exampleCheck1">Lưu tài khoản</label>
   </div>
           <button type="submit" name="submit" class="btn text-white w-100 text-uppercase">Đăng nhập</button>
           <p class="mt-4">Quên mật khẩu? <a href="newpass.php">Reset mật khẩu</a></p>
